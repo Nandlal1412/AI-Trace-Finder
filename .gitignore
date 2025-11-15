@@ -1,0 +1,16 @@
+# Ignore virtual environment
+venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# OS system files
+.DS_Store
+
+# Ignore environment & temporary files
+.env
+*.log
+
+# Ignore checkpoints, even if added later
+*.ipynb_checkpoints/
