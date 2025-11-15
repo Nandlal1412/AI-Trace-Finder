@@ -662,7 +662,7 @@ elif page == 'Feature Visualization':
         'PRNU features (features.pkl)': MODELS_DIR / 'features.pkl',
         'Enhanced features (enhanced_features.pkl)': MODELS_DIR / 'enhanced_features.pkl'
     }
-    choice = st.selectbox('', list(feat_files.keys()))
+    choice = st.selectbox('Select a feature file:', list(feat_files.keys()), label_visibility='collapsed')
     fpath = feat_files[choice]
     data = load_pickle_safe(fpath) if fpath.exists() else None
 
